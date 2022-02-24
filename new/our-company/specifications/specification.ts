@@ -1,4 +1,5 @@
-import { ICondition, IFilterable } from "../interfaces";
+import { ICondition } from "../interfaces/icondition";
+import { IFilterable } from "../interfaces/ifilterable";
 
 export default class Specification implements ICondition<IFilterable> {
   conditions: Array<ICondition<IFilterable>>;

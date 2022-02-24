@@ -1,4 +1,5 @@
-import { ICondition, INamable } from "../interfaces";
+import { ICondition } from "../interfaces/icondition";
+import { INamable } from "../interfaces/inamable";
 
 export default class NameSpecification implements ICondition<INamable> {
   private readonly name: string;

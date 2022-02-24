@@ -1,5 +1,5 @@
 import { Colour, Size } from "./enums";
-import { IFilterable } from "./interfaces";
+import { IFilterable } from "./interfaces/ifilterable";
 
 export default class Filterable implements IFilterable {
   private readonly name: string;

@@ -2,11 +2,11 @@ import { Colour, Size } from "../new/our-company/enums";
 import Inventory from "../new/our-company/inventory";
 import Shoe from "../new/our-company/filterable";
 import Filter from "../new/our-company/filter";
-import { IFilterable } from "../new/our-company/interfaces";
 import ColourSpecification from "../new/our-company/specifications/colour-specification";
 import SizeSpecification from "../new/our-company/specifications/size-specification";
 import NameSpecification from "../new/our-company/specifications/name-specification";
 import Specification from "../new/our-company/specifications/specification";
+import { IFilterable } from "../new/our-company/interfaces/ifilterable";
 
 export default class Adidas {
   public static run(): void {

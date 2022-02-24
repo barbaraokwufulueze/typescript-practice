@@ -1,4 +1,6 @@
-import { ICondition, IFilter, IFilterable } from "./interfaces";
+import { ICondition } from "./interfaces/icondition";
+import { IFilter } from "./interfaces/ifilter";
+import { IFilterable } from "./interfaces/ifilterable";
 
 export default class Filter implements IFilter<IFilterable> {
   private static *search<IFilterable>(

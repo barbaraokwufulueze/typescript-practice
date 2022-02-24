@@ -1,5 +1,6 @@
 import { Colour } from "../enums";
-import { IColourable, ICondition } from "../interfaces";
+import { IColourable } from "../interfaces/icolourable";
+import { ICondition } from "../interfaces/icondition";
 
 export default class ColourSpecification implements ICondition<IColourable> {
   private readonly colour: Colour;
