@@ -23,8 +23,4 @@ export default class Filterable implements IFilterable {
   getName(): string {
     return this.name;
   }
-
-  toArray<T>(item: Iterable<T>): T[] {
-    return [...item];
-  }
 }

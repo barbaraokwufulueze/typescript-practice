@@ -12,16 +12,14 @@ interface INamable {
   getName(): string;
 }
 
-interface IFilterable extends IColourable, ISizable, INamable {
-  toArray<T>(item: Iterable<T>): T[];
+interface IFilterable extends IColourable, ISizable, INamable {}
+
+interface ICondition<IFilterable> {
+  isValid(item: IFilterable): boolean;
 }
 
-interface ICondition<T> {
-  isValid(item: T);
-}
-
-interface IFilter<T> {
-  search(items: Array<T>, condition: ICondition<T>): Iterable<T>;
+interface IFilter<IFilterable> {
+  getItems(items: Array<IFilterable>, condition: ICondition<IFilterable>);
 }
 
 export { IColourable, ICondition, IFilter, IFilterable, INamable, ISizable };
